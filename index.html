@@ -1,1 +1,55 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 2.32.11"/><link as="script" rel="preload" href="/component---src-pages-index-js-8d42d0ecd989aa6d868e.js"/><link as="script" rel="preload" href="/framework-d585a04b7d285a7760d6.js"/><link as="script" rel="preload" href="/app-4986a06f4cc677dba867.js"/><link as="script" rel="preload" href="/webpack-runtime-84b155d28136e0a86301.js"/><link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><h1>Hello World!</h1></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e4ff66ed5ec0b4bd2598.js"],"app":["/app-4986a06f4cc677dba867.js"],"component---node-modules-gatsby-theme-garden-src-templates-local-file-js":["/component---node-modules-gatsby-theme-garden-src-templates-local-file-js-b68ca6b0212e4ce2f6f3.js"],"component---src-pages-404-js":["/component---src-pages-404-js-bbf29e2f570f8b7d7b94.js"],"component---src-pages-index-js":["/component---src-pages-index-js-8d42d0ecd989aa6d868e.js"]};/*]]>*/</script><script src="/polyfill-e4ff66ed5ec0b4bd2598.js" nomodule=""></script><script src="/webpack-runtime-84b155d28136e0a86301.js" async=""></script><script src="/app-4986a06f4cc677dba867.js" async=""></script><script src="/framework-d585a04b7d285a7760d6.js" async=""></script><script src="/component---src-pages-index-js-8d42d0ecd989aa6d868e.js" async=""></script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WXX4Q98");
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <!-- <script src="src/index.js"></script> -->
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var s, t;
+        s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src =
+          "https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/qismo-v4.js";
+        s.async = true;
+        s.onload = s.onreadystatechange = function () {
+          new Qismo("pump-sgw23d71kcvuo0p8", {
+            options: {
+              channel_id: 120227,
+              extra_fields: []
+            },
+            onNewMessages: (e) => {
+              window.dataLayer.push({
+                event: "newQiscusMessage"
+              });
+            }
+          });
+        };
+        t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+      });
+    </script>
+  </body>
+</html>
