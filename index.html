@@ -38,10 +38,10 @@
         s.src = "https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/qismo-v3.js";
         s.async = true;
         s.onload = s.onreadystatechange = function () {
-          new Qismo("pump-sgw23d71kcvuo0p8", {
+          new Qismo("cilf-exsqcfjbswwr8pa4", {
             options: {
-              channel_id: 120227,
-              extra_fields: [],
+              channel_id: 119632,
+              extra_fields: [{"name":"Purpose","options":[{"id":4304,"label":"Cari Unit"},{"id":2376,"label":"Titip Unit"},{"id":4838,"label":"Keluhan"}],"placeholder":"Tujuan","required":false,"type":"select"}],
             },
             onLoginSuccess: (e) => {
               if (!window.localStorage.getItem("isLoggedIn")) { 
