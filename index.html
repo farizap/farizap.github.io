@@ -39,7 +39,6 @@
         s.async = true;
         s.onload = s.onreadystatechange = function () {
           new Qismo("pump-sgw23d71kcvuo0p8", {
-            options: {
               channel_id: 120227,
               extra_fields: [],
               callbacks: {
@@ -52,23 +51,7 @@
               });
             }, 
               }
-            },
-            onNewMessages: (e) => {
-              alert(JSON.stringify(e));
-              console.log(JSON.stringify(e));
-              window.dataLayer.push({
-                event: "newQiscusMessage",
-                payload: "Coba ah"
-              });
-            },
-            onLoginSuccess: (e) => {
-              alert(JSON.stringify(e));
-              console.log(JSON.stringify(e));
-              window.dataLayer.push({
-                event: "newQiscusMessage",
-                payload: "Coba ah"
-              });
-            },
+      
           });
         };
         t = document.getElementsByTagName("script")[0];
