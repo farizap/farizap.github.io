@@ -21,7 +21,7 @@
 
   <body>
     <div id="app"></div>
-    <h2>Test 10 : Add logic inn </h2>
+    <h2>Test 11 : Add logic inn </h2>
 
     <!-- <script src="src/index.js"></script> -->
 
@@ -41,6 +41,7 @@
           new Qismo("cilf-exsqcfjbswwr8pa4", {
             options: { 
                   channel_id: 119632,
+                  extras: JSON.stringify({ key: value }),
                   extra_fields: JSON.stringify([{"name":"Purpose","options":[{"id":4304,"label":"Cari Unit"},{"id":2376,"label":"Titip Unit"},{"id":4838,"label":"Keluhan"}],"placeholder":"Tujuan","required":false,"type":"select"}]),
               },
             onLoginSuccess: (e) => {
