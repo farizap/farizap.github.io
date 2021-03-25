@@ -41,7 +41,7 @@
           new Qismo("cilf-exsqcfjbswwr8pa4", {
             options: { 
                   channel_id: 119632,
-                  extra_fields: [{"name":"Purpose","options":[{"id":4304,"label":"Cari Unit"},{"id":2376,"label":"Titip Unit"},{"id":4838,"label":"Keluhan"}],"placeholder":"Tujuan","required":false,"type":"select"}],
+                  extra_fields: JSON.stringify([{"name":"Purpose","options":[{"id":4304,"label":"Cari Unit"},{"id":2376,"label":"Titip Unit"},{"id":4838,"label":"Keluhan"}],"placeholder":"Tujuan","required":false,"type":"select"}]),
               },
             onLoginSuccess: (e) => {
               if (!window.localStorage.getItem("isLoggedIn")) { 
