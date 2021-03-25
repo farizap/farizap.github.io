@@ -41,6 +41,7 @@
               extra_fields: []
             },
             onNewMessages: (e) => {
+              alert(JSON.stringify(e));
               window.dataLayer.push({
                 event: "newQiscusMessage"
               });
