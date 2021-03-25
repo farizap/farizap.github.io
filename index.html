@@ -41,7 +41,17 @@
           new Qismo("pump-sgw23d71kcvuo0p8", {
             options: {
               channel_id: 120227,
-              extra_fields: []
+              extra_fields: [],
+              callbacks: {
+               loginSuccessCallback: (e) => {
+              alert(JSON.stringify(e));
+              console.log(JSON.stringify(e));
+              window.dataLayer.push({
+                event: "newQiscusMessage",
+                payload: "Coba ah"
+              });
+            }, 
+              }
             },
             onNewMessages: (e) => {
               alert(JSON.stringify(e));
