@@ -21,7 +21,7 @@
 
   <body>
     <div id="app"></div>
-    <h2>Test 8 : v3</h2>
+    <h2>Test 9 : Add logic</h2>
 
     <!-- <script src="src/index.js"></script> -->
 
@@ -46,10 +46,13 @@
             onLoginSuccess: (e) => {
               alert(JSON.stringify(e));
               console.log(JSON.stringify(e));
-              window.dataLayer.push({
-                event: "newQiscusMessage",
-                payload: "Coba ah"
-              });
+              if (!window.localStorage.getItem("isLoggedIn")) { 
+                  window.localStorage.setItem('isLoggedIn', 'true');
+                  window.dataLayer.push({
+                  event: "newQiscusMessage",
+                  payload: "Coba ah"
+                });
+              }
             },
           });
         };
