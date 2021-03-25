@@ -21,7 +21,7 @@
 
   <body>
     <div id="app"></div>
-    <h2>Test 9 : Add logic</h2>
+    <h2>Test 10 : Add logic </h2>
 
     <!-- <script src="src/index.js"></script> -->
 
@@ -44,9 +44,9 @@
               extra_fields: [],
             },
             onLoginSuccess: (e) => {
-              alert(JSON.stringify(e));
-              console.log(JSON.stringify(e));
               if (!window.localStorage.getItem("isLoggedIn")) { 
+                  alert(JSON.stringify(e));
+                  console.log(JSON.stringify(e));
                   window.localStorage.setItem('isLoggedIn', 'true');
                   window.dataLayer.push({
                   event: "newQiscusMessage",
