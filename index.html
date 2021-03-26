@@ -21,44 +21,6 @@
 
   <body>
     <div id="app"></div>
-    <h2>Test 11 : Add logic inn </h2>
-
-    <!-- <script src="src/index.js"></script> -->
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-                event: "Loaded"
-              });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        var s, t;
-        s = document.createElement("script");
-        s.type = "text/javascript";
-        s.src = "https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/qismo-v3.js";
-        s.async = true;
-        s.onload = s.onreadystatechange = function () {
-          new Qismo("cilf-exsqcfjbswwr8pa4", {
-            options: { 
-                  channel_id: 119632,
-                  extra_fields: JSON.stringify([{"name":"Purpose","options":[{"id":4304,"label":"Cari Unit"},{"id":2376,"label":"Titip Unit"},{"id":4838,"label":"Keluhan"}],"placeholder":"Tujuan","required":false,"type":"select"}]),
-              },
-            onLoginSuccess: (e) => {
-              if (!window.localStorage.getItem("isLoggedIn")) { 
-                  alert(JSON.stringify(e));
-                  console.log(JSON.stringify(e));
-                  window.localStorage.setItem('isLoggedIn', 'true');
-                  window.dataLayer.push({
-                  event: "newQiscusMessage",
-                  payload: "Coba ah"
-                });
-              }
-            },
-          });
-        };
-        t = document.getElementsByTagName("script")[0];
-        t.parentNode.insertBefore(s, t);
-      });
-    </script>
+    <h2>Test 12 : Inject widget </h2>
   </body>
 </html>
